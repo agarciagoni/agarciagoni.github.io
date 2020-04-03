@@ -80,6 +80,7 @@ body {
     border: none;
     width: 75%;
     height: 30em;
+    
 }
 
 hr {
@@ -9574,8 +9575,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) {
   .page-section .page-section-heading {
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.5rem;
   }
 }
 
