@@ -1,0 +1,94 @@
+<!-- /////////////////////////////////////////////////////////////// -->
+<div class="col-12 col-md-6 col-lg-4">
+  <button name="02blindeye" type="button" class="portfolio-item btn btn-link">
+    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+      <div
+        class="portfolio-item-caption-content my-auto w-100 text-center text-dark"
+      >
+        <h4>BlindEye</h4>
+      </div>
+    </div>
+    <img class="img-fluid" src="projects/02blindeye/blindeye.png" alt="" />
+  </button>
+</div>
+<!-- ///////////////////////////////////////////////////////////////<!-- /////////////////////////////////////////////////////////////// -->
+<div class="col-12 col-md-6 col-lg-4">
+  <button name="01homedatavisuals" type="button" class="portfolio-item btn btn-link">
+    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+      <div
+        class="portfolio-item-caption-content my-auto w-100 text-center text-dark"
+      >
+        <h4>Home Data Visuals</h4>
+      </div>
+    </div>
+    <img class="img-fluid" src="projects/01homedatavisuals/status.png" alt="" />
+  </button>
+</div>
+<!-- ///////////////////////////////////////////////////////////////
+--><!-- /////////////////////////////////////////////////////////////// -->
+<div class="col-12 col-md-6 col-lg-4">
+  <button name="00homedata" type="button" class="portfolio-item btn btn-link">
+    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+      <div
+        class="portfolio-item-caption-content my-auto w-100 text-center text-dark"
+      >
+        <h4>Home Data</h4>
+      </div>
+    </div>
+    <img class="img-fluid" src="projects/00homedata/connections.png" alt="" />
+  </button>
+</div>
+
+
+<!-- /////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////// -->
+<!-- Wide Modal -->
+
+<!-- The Modal -->
+<div class="modal fade" id="PortfolioModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header" data-dismiss="modal">
+        <button type="button" class="close">
+          close <i class="fa fa-times fa-1x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body"></div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal">
+          <i class="fa fa-times fa-1x" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- script to inject external html into modal div -->
+<script>
+  $(":button").click(function(event) {
+    if (event.currentTarget.name) {
+      var pathPrj =
+        "projects/" +
+        String(event.currentTarget.name) +
+        "/" +
+        String(event.currentTarget.name) +
+        ".html";
+      console.log("open this project: " + pathPrj);
+      $(".modal-body").load(pathPrj, function() {
+        $("#PortfolioModal").modal({
+          show: true
+        });
+      });
+    }
+  });
+</script>
