@@ -4,7 +4,7 @@
   <div class="col-sm">
     <a
       class="btn float-right"
-      href="https://github.com/agarciagoni/HomeData"
+      href="https://github.com/agarciagoni/HomeData-Visuals"
       target="_blank"
     >
       <i class="fa fa-github fa-2x"></i>
@@ -14,33 +14,30 @@
 <h5>Visualization of home gathered data</h5>
 <br />
 <p>
-  The project consists of a transformable kitchen, using architectural robotics for a hyper-efficent use of space. To make it more interesring, in a built prototype we include a wide range of sensors aiming
-    to detect activity and study behavior in a new transformable enviroment. More info about the complete proyect
-   <a href="https://www.media.mit.edu/projects/piccolo-kitchen/overview/" target="_blank"> here! </a>.
+   In the <a href="https://www.media.mit.edu/projects/piccolo-kitchen/overview/" target="_blank"> Home Data project</a> we developed a network sensors for transformable housing enviroments. Once the data was collected,
+   we decided to build a visual tool for the first analysis and to make it easier for the user to see his own behavior! Using <a href="https://plotly.com/dash/" target="_blank"> Dash from plotly</a> a dashboard building
+   tool using python.
+   
    <br>
    <br>
   <button type="button" class="btn-readmore" data-toggle="collapse" data-target="#demo">More info</button>
-  <div id="demo" class="collapse"> The project consits of a network of simple, cheap, noninvasive sensors to minimize the privacy invasion.
-    Through non personal data such as temperature, humidity, sound levels, distance from the cooktop or cabient interactions
-   the goal is to study the behavior of user in transformable enviroments. The final objective is to build a human activity recognition system (HAR) through non invasive sensors.
+  <div id="demo" class="collapse"> The idea is to build an easily customizable tool, where graphs and tables are easy to change and adapt to what the users understands better. 
+   A first demo can be found in this <a href="https://github.com/agarciagoni/HomeData-Visuals" target="_blank"> github repo </a>. 
    <br>
    <br>
-   The sensor included in the protype are the following:
+   At the moment, the build features are:
+   <br>
    <br>
    <ul type='circle'>
-	<li> Ultrasonic Sensor Y401</li>
-	<li> Matbotix Ultrasonic range finder EZ</li>
-	<li> VL53L0X distance_sonic sensor</li>
-	<li> Sound sensor SEN-12642 x2</li>
-	<li> PIR sensor x3 </li>
-	<li> Buttons x7 ( 3 backside,2 upper cabinet left, 2 upper cabinet right)</li>
-	<li> <a class="text-bold" 
-	      href="http://termites.synthetic.space/"
-		  target="_blanl"
-		  > TerMITes </a> x1 (Measuring Temperature, Humidity and Light)
-	</div></li>
+	<li> Project description window, with simple information about the project</li>
+	<br>
+	<li> Historical data analysis window. Here the user can find graphs analysinzg his interaction with different moving kitchen components, or the relationship between enviromental variables like sound, light, humidity or 
+	temperature in a time scale. Besides, with a data table is easy to go trough the day and see the data for every moment</li>
+	<br>
+	<li> Storage window. As we are working in a kitchen data project, and storage is key, here we included the measure of main enviromental variables for storing food like temperature, humidty and light. 
+	Also graphs aiming to show the enviromental status of the whole space. </li>
    </ul>
-
+   </div>
 </p>
 <br />
 <!-- /////////////////////////////////////////////////////////////// -->
