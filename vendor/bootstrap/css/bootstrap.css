@@ -5151,6 +5151,9 @@ button.close {
   .modal-lg {
     max-width: 800px;
   }
+  .modal-xl {
+    max-width: 1000px;
+  }
 }
 
 .tooltip {
