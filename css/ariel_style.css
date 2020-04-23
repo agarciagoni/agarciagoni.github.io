@@ -587,3 +587,111 @@ button:focus {
     background-color: #1a252f;
     border-color: #1a252f;
 }
+
+
+
+///Extra mine
+@keyframes words {
+  0% {content: "I";}
+  17% {content: "I ";}
+  34% {content: "I a";}
+  50% {content: "I am";}
+  67% {content: "I am ";}
+  84% {content: "I am a";}
+  100% {content: "I am a ";}
+}
+@keyframes changeLetter {
+  0% {content: "";}
+  2% {content: "E";}
+  4% {content: "En";}
+  6% {content: "Eng";}
+  8% {content: "Engi";}
+  10% {content: "Engin";}
+  12% {content: "Engine";}
+  14% {content: "Enginee";}
+  16% {content: "Engineer";}
+  18% {content: "Engineeri";}
+  20% {content: "Engineerin";}
+  28% {content: "Engineering";}
+  29% {content: "Engineerin";}
+  30% {content: "Engineeri";}
+  31% {content: "Engineer";}
+  32% {content: "Enginee";}      
+  33% {content: "Engine";}
+  34% {content: "Engin";}
+  35% {content: "Engi";}
+  36% {content: "Eng";}
+  37% {content: "En";}
+  38% {content: "E";}
+  39% {content: "";}
+  40% {content: "R";}
+  42% {content: "Ro";}
+  44% {content: "Rob";}
+  46% {content: "Robo";}
+  48% {content: "Robot";}
+  50% {content: "Roboti";}
+  52% {content: "Robotic";}
+  60% {content: "Robotics";}
+  61% {content: "Robotic";}
+  62% {content: "Roboti";}
+  63% {content: "Robot";}
+  64% {content: "Robo";}
+  65% {content: "Rob";}
+  66% {content: "Ro";}
+  67% {content: "R";}
+  68% {content: "";}
+  70% {content: "A";}
+  72% {content: "An";}
+  74% {content: "Ana";}
+  76% {content: "Anal";}
+  78% {content: "Analy";}
+  80% {content: "Analyt";}
+  82% {content: "Analyti";}
+  84% {content: "Analytic";}
+  90% {content: "Analytics";}
+  91% {content: "Analytic";}
+  92% {content: "Analyti";}
+  93% {content: "Analyt";}
+  94% {content: "Analy";}
+  95% {content: "Anal";}
+  96% {content: "Ana";}
+  97% {content: "An";}
+  98% {content: "A";}
+  99% {content: "";}
+}
+@keyframes cursor {
+  0% {content: "";}
+  50% {content: "|";}
+  100% {content: "";}
+}
+.words::before {
+  animation: words 1s linear 0s 1 normal forwards;
+  content: "";
+  
+    
+}
+.letter-changer::before {
+  animation: changeLetter 3s linear 1s 1 normal forwards;
+  content: "";
+  animation-delay:2s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.letter-changer::after {
+  animation: cursor 0.6s linear 2.2s 1 normal forwards, cursor 0.6s linear 4s 3 normal forwards;
+  content: "|";
+  animation-iteration-count: infinite;
+ }
+.accessibility {
+  width: 0; 
+  display: inline-block; 
+  overflow: hidden; 
+  white-space:nowrap;
+  
+}
+
+
+
+.portfolio-back{
+    background-color: rgba(255,255,255,0.9);
+}
